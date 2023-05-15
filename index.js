@@ -47,8 +47,8 @@ app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
 
-// module.exports = app;
-export const api = app;
+module.exports = app;
+// export const api = app;
 
 // const completion = await openai.createChatCompletion({
 //   model: "gpt-3.5-turbo",
