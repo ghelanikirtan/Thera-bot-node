@@ -8,8 +8,8 @@ const require = createRequire(import.meta.url);
 require("dotenv").config();
 
 const configuration = new Configuration({
-  organization: `org-GzDyuS4e61wrvKAhfPnQgB2i`,
-  apiKey: `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`,
+  organization: `${process.env.ORG_ID}`,
+  apiKey: `${process.env.API_KEY}`,
 });
 
 const openai = new OpenAIApi(configuration);
